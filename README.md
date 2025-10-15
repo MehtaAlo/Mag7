@@ -1,38 +1,89 @@
-# Buzzkill
+# 🧠 Mag7 – Real-Time Stock Analytics Dashboard
 
-A Full-Stack Smart Stock Trading Dashboard with Real-Time Insights.
+Mag7 is a full-stack FinTech analytics platform providing real-time insights, market sentiment, and data visualization for the Magnificent Seven — Apple, Microsoft, Alphabet, Amazon, Meta, Nvidia, and Tesla.
+The project combines live APIs, interactive charts, and educational finance tools to help users visualize trends, compare performance, and make smarter investment decisions.
 
-Buzzkill is an interactive fintech web application designed to help users track their investments, visualize profits and losses, and identify optimal entry and exit points using live market data and sentiment analysis.
+🌍 Live Demo
+
+🔗 Visit the site: Mag7 Dashboard
+
+(If you haven’t deployed it yet, replace this later with your live link or GitHub Pages link.)
 
 🚀 Features
+📊 Real-Time Stock Data
 
-Live Stock Data: Backend server fetches real-time stock prices securely using the Twelve Data API.
+Fetches live stock prices and analytics from APIs like Yahoo Finance, Alpha Vantage, or Finnhub.
 
-Interactive Charts: Dynamic charts display portfolio performance and historical trends using Chart.js.
+Updates automatically using asynchronous API calls for real-time visualization.
 
-Profit/Loss Tracker: Automatically calculates gains and losses across multiple stocks.
+📰 Market News Feed
 
-Market Sentiment Insights: Analyzes market news and social media sentiment to provide actionable insights.
+Displays real-time news headlines and market sentiment from trusted sources (e.g., Google Finance, NewsAPI).
 
-Responsive Design: Clean, modern interface built with HTML, CSS, and JavaScript.
+Merges live data with sentiment indicators to highlight trending events per stock.
 
-Full-Stack Architecture: Frontend communicates with a Node.js/Express backend, which handles API requests and protects sensitive API keys.
+💹 Interactive Visualizations
 
-💻 Tech Stack
+Built using Chart.js / D3.js, showing stock trends, moving averages, and performance comparisons.
 
-Frontend: HTML, CSS, JavaScript, Chart.js
+Users can hover, zoom, and explore visual insights interactively.
 
-Backend: Node.js + Express (handles API requests & data processing)
+🧠 Educational Insights
 
-Data & APIs: Twelve Data API for real-time stock prices
+Each stock card includes contextual learning—explaining what impacts its price, sector growth, and market drivers.
 
-Optional: Sentiment analysis using social media or news feeds
+Ideal for beginners looking to understand financial analytics through visualization.
 
-🎯 Purpose
+⚙️ Backend Functionality (Planned)
 
-Buzzkill demonstrates practical data-driven decision-making in finance, combining real-time analytics, visualization, market sentiment, and secure backend integration to give users actionable investment insights.
+Python Flask or Node.js backend to manage API calls securely, cache responses, and handle heavy data traffic.
 
-🔗 Try It Out
+MongoDB or PostgreSQL integration to store historical performance data for trend comparison.
 
-Check out the live demo hosted on GitHub Pages here
- or explore the source code to see how a full-stack, secure, interactive fintech dashboard is implemented.
+🖼️ Preview
+Company	Preview
+Apple (AAPL)	
+
+Microsoft (MSFT)	
+
+Alphabet (GOOGL)	
+
+Amazon (AMZN)	
+
+Meta (META)	
+
+Nvidia (NVDA)	
+
+Tesla (TSLA)	
+🧩 Tech Stack
+
+Frontend
+
+HTML5, CSS3, JavaScript (Vanilla)
+
+Chart.js / D3.js (for visualizations)
+
+Fetch API / Axios for asynchronous data calls
+
+Backend
+
+Flask / Node.js (for API handling & caching)
+
+MongoDB / PostgreSQL (for storing analytics & news)
+
+APIs
+
+Yahoo Finance API
+
+Finnhub.io
+
+NewsAPI.org
+
+💡 Educational Value
+
+Mag7 is more than just a dashboard — it’s an interactive classroom for finance and data analytics.
+Users can:
+
+Learn how real-time stock APIs work.
+
+Understand financial visualizations.
