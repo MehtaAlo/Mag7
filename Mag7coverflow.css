@@ -61,6 +61,23 @@
             transition: all 0.3s ease;
         }
 
+        .logo-container {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        }
+
+        .logo-img {
+            width: 50px; /* adjust size as needed */
+            height: auto;
+            margin-right: 10px;
+            }
+
+            .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00b4db; /* match your theme */
+            }
 
         .header.scrolled {
             background: rgba(8, 0, 51, 0.95);
