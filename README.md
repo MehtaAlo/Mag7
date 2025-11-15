@@ -7,7 +7,7 @@ The project combines live APIs, interactive charts, and educational finance tool
 
 🔗 Visit the site: Mag7 Dashboard
 
-(If you haven’t deployed it yet, replace this later with your live link or GitHub Pages link.)
+https://github.com/MehtaAlo/Mag7
 
 🚀 Features
 📊 Real-Time Stock Data
@@ -43,6 +43,8 @@ MongoDB or PostgreSQL integration to store historical performance data for trend
 🖼️ Preview
 Company	Preview
 Apple (AAPL)	
+
+![Apple Logo](https://thumbs.dreamstime.com/b/apple-inc-american-multinational-technology-company-headquartered-cupertino-california-designs-develops-sells-205685480.jpg)
 
 Microsoft (MSFT)	
 
