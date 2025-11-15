@@ -1,4 +1,3 @@
-
 // JavaScript Document
 
         // Coverflow functionality
@@ -37,8 +36,8 @@
         // Image data with titles and descriptions
         const imageData = [
             {
-                title: "Mountain Landscape",
-                description: "Majestic peaks covered in snow during golden hour"
+                title: "Nvidia (NASDAQ: NVDA)",
+                description: "Real-time Insight on Nvidia Stock showcased below"
             },
             {
                 title: "Forest Path",
@@ -78,6 +77,11 @@
         let autoplayInterval = null;
         let isPlaying = true;
         const playIcon = document.querySelector('.play-icon');
+        // Redirect to Nvidia page
+        playIcon.addEventListener('click', () => {
+        window.location.href = "Nvidia.html";
+        });
+
         const pauseIcon = document.querySelector('.pause-icon');
 
         function updateCoverflow() {
