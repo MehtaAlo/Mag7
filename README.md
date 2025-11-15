@@ -64,7 +64,12 @@ Meta (META)
 
 Nvidia (NVDA)	
 
-Tesla (TSLA)	
+![Nvidia Logo](https://www.nvidia.com/content/nvidiaGDC/us/en_US/about-nvidia/legal-info/logo-brand-usage/_jcr_content/root/responsivegrid/nv_container_392921705/nv_container/nv_image.coreimg.100.1070.png/1703060329053/nvidia-logo-vert.png)
+
+Tesla (TSLA)
+
+![Tesla Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png)
+
 🧩 Tech Stack
 
 Frontend
