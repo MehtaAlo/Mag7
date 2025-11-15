@@ -41,14 +41,18 @@ Python Flask or Node.js backend to manage API calls securely, cache responses, a
 MongoDB or PostgreSQL integration to store historical performance data for trend comparison.
 
 🖼️ Preview
-Company	Preview
+Company
 Apple (AAPL)	
 
-![Apple Logo](https://thumbs.dreamstime.com/b/apple-inc-american-multinational-technology-company-headquartered-cupertino-california-designs-develops-sells-205685480.jpg)
+![Apple Logo](https://c4.wallpaperflare.com/wallpaper/871/317/163/apple-company-gray-white-wallpaper-preview.jpg)
 
-Microsoft (MSFT)	
+Microsoft (MSFT)
+
+![Microsoft Logo](https://www.logodesignlove.com/wp-content/uploads/2012/08/microsoft-logo-02.jpeg)
 
 Alphabet (GOOGL)	
+
+![Google Logo](https://upload.wikimedia.org/wikipedia/wikimania2007/thumb/6/63/GoogleLogo.jpg/1200px-GoogleLogo.jpg)
 
 Amazon (AMZN)	
 
