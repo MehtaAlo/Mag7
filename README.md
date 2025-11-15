@@ -56,7 +56,11 @@ Alphabet (GOOGL)
 
 Amazon (AMZN)	
 
+![Amazon Logo](https://i0.wp.com/magzoid.com/wp-content/uploads/2025/05/amazon-rebrand-2025_dezeen_2364_col_1-1.webp?fit=2364%2C1330&ssl=1)
+
 Meta (META)	
+
+![Meta Logo](https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png)
 
 Nvidia (NVDA)	
 
