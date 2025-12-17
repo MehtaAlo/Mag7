@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
 // !!! IMPORTANT: Get your free key from Alpha Vantage and paste it here
-const API_KEY = "8DJ7XPJ7SGK02P0J";
+const API_KEY = "";
 const SYMBOL = "NVDA";
 
 
