@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nvidia Stock Dashboard</title>
+    <title>Tesla Stock Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
@@ -59,7 +59,6 @@
             border-radius: 10px;
         }
 
-        /* NEW STYLE FOR INFO BOX LAYOUT */
         .key-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -109,14 +108,14 @@
 <body>
 
     <div class="container">
-        <h1>NVIDIA Corporation (NVDA)</h1>
+        <h1>Tesla, Inc. (TSLA)</h1>
 
         <div class="price-box">
             <div>
                 <div class="price" id="price">Loading...</div>
                 <div class="change" id="change"></div>
             </div>
-            <img src="images/nvidia.png" width="90" alt="Nvidia Logo">
+            <img src="./images/Tesla.jpg" width="90" alt="Tesla Logo">
         </div>
 
         <div class="info-box">
@@ -150,15 +149,15 @@
         </div>
 
         <div class="chart-container">
-            <canvas id="nvdaChart"></canvas>
+            <canvas id="tslaChart"></canvas>
         </div>
 
         <div class="info-box">
-            <h2>About Nvidia</h2>
+            <h2>About Tesla</h2>
             <p>
-                Nvidia Corporation designs graphics processing units (GPUs) for gaming and professional markets,
-                as well as system-on-chip units (SoCs) for mobile computing and automotive applications. 
-                Nvidia is the driving force behind AI computing worldwide.
+                Tesla, Inc. designs, manufactures, and sells electric vehicles, energy storage solutions,
+                and solar energy products. Tesla is a leader in electric mobility, autonomous driving technology,
+                and sustainable energy innovation.
             </p>
         </div>
 
@@ -167,7 +166,6 @@
         </div>
     </div>
 
-    <script src="Nvidia.js" defer></script>
+    <script src="Tesla.js" defer></script>
 </body>
 </html>
-

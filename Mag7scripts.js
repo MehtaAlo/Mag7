@@ -40,28 +40,28 @@
                 description: "Real-time Insight on Nvidia Stock showcased below"
             },
             {
-                title: "Forest Path",
-                description: "A winding trail through ancient woodland"
+                title: "Google (NASDAQ: GOOG)",
+                description: "Real-time Insight on Google Stock showcased below"
             },
             {
-                title: "Lake Reflection",
-                description: "Serene waters mirroring the surrounding landscape"
+                title: "Tesla (NASDAQ: TSLA)",
+                description: "Real-time Insight on Tesla Stock showcased below"
             },
             {
-                title: "Ocean Sunset",
-                description: "Golden hour over endless ocean waves"
+                title: "Apple (NASDAQ: AAPL)",
+                description: "Real-time Insight on Apple Stock showcased below"
             },
             {
-                title: "Desert Dunes",
-                description: "Rolling sand dunes under vast blue skies"
+                title: "Amazon (NASDAQ: AMZN)",
+                description: "Real-time Insight on Amazon Stock showcased below"
             },
             {
-                title: "Starry Night",
-                description: "Countless stars illuminating the dark sky"
+                title: "Micorsoft (NASDAQ: MSFT)",
+                description: "Real-time Insight on Microsoft Stock showcased below"
             },
             {
-                title: "Waterfall",
-                description: "Cascading water through lush green forest"
+                title: "Meta (NASDAQ: META)",
+                description: "Real-time Insight on Meta Stock showcased below"
             }
         ];
 
@@ -78,9 +78,21 @@
         let isPlaying = true;
         const playIcon = document.querySelector('.play-icon');
         // Redirect to Nvidia page
+        const pageMap = {
+            0: "Nvidia.html",
+            1: "google.html",
+            2: "Tesla.html",
+            3: "apple.html",
+            4: "amazon.html",
+            5: "microsoft.html",
+            6: "meta.html",
+        };
+
         playIcon.addEventListener('click', () => {
-        window.location.href = "Nvidia.html";
+            const page = pageMap[currentIndex];
+            if (page) window.location.href = page;
         });
+
 
         const pauseIcon = document.querySelector('.pause-icon');
 

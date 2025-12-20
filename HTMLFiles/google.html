@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Stock Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            background: #0d1117;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 20px;
+            background: #161b22;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px #00000050;
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .price-box {
+            margin-top: 20px;
+            background: #0d1117;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .change {
+            font-size: 20px;
+        }
+
+        .chart-container {
+            margin-top: 30px;
+            background: #0d1117;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .key-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            background: #161b22;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .stat-item .label {
+            font-size: 14px;
+            color: #959da5;
+        }
+
+        .stat-item .value {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .back-button a {
+            color: #00b4db;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #0d1117;
+            border-radius: 10px;
+        }
+
+        .info-box h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Alphabet Inc. (GOOGL)</h1>
+
+        <div class="price-box">
+            <div>
+                <div class="price" id="price">Loading...</div>
+                <div class="change" id="change"></div>
+            </div>
+            <img src="images/google.webp" width="90" alt="Google Logo">
+        </div>
+
+        <div class="info-box">
+            <h2>Key Daily Statistics</h2>
+            <div class="key-stats">
+                <div class="stat-item">
+                    <div class="label">Today's High</div>
+                    <div class="value" id="dayHigh">--</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">Today's Low</div>
+                    <div class="value" id="dayLow">--</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">Volume</div>
+                    <div class="value" id="volume">--</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">P/E Ratio (TTM)</div>
+                    <div class="value" id="peRatio">--</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">Market Cap</div>
+                    <div class="value" id="marketCap">--</div>
+                </div>
+                <div class="stat-item">
+                    <div class="label">52-Week High</div>
+                    <div class="value" id="fiftyTwoWeekHigh">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="googlChart"></canvas>
+        </div>
+
+        <div class="info-box">
+            <h2>About Alphabet</h2>
+            <p>
+                Alphabet Inc. is the parent company of Google, specializing in internet services,
+                advertising, cloud computing, artificial intelligence, and consumer electronics.
+            </p>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script src="Google.js" defer></script>
+</body>
+</html>
