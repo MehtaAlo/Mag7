@@ -1,46 +1,43 @@
-# 🧠 Mag7 – Real-Time Stock Analytics Dashboard
+# Mag7 – Real-Time Stock Analytics Dashboard
 
-Mag7 is a full-stack FinTech analytics platform providing real-time insights, market sentiment, and data visualization for the Magnificent Seven — Apple, Microsoft, Alphabet, Amazon, Meta, Nvidia, and Tesla.
-The project combines live APIs, interactive charts, and educational finance tools to help users visualize trends, compare performance, and make smarter investment decisions.
+Mag7 is a bloomberg-inspired FinTech analytics platform delivering real-time insights for the “Magnificent Seven” tech stocks — Apple (AAPL), Microsoft (MSFT), Alphabet (GOOGL), Amazon (AMZN), Meta(META), Nvidia (NVDA), and Tesla (TSLA). Integrated Alpha Vantage APIs with client-side JavaScript and Chart.js to render dynamic per-stock live market data visualizations including trading volume, 52-week high & forward PE ratios.
 
-🌍 Live Demo
+
+Live Demo
 
 🔗 Visit the site: Mag7 Dashboard
 
 https://github.com/MehtaAlo/Mag7
 
-🚀 Features
-📊 Real-Time Stock Data
+Features:
 
-Fetches live stock prices and analytics from APIs like Yahoo Finance, Alpha Vantage, or Finnhub.
+Real-Time Stock Data
+
+Mag7 is designed to bring clarity to the chaos of financial markets. Its designed to help users track performance of the 7 most influential stocks listed on NASDAQ, found in almost everyone's portfolio, including high-profile mutual funds to low-risk ETFs to daytraders to beginner-investors, its a service applicable to all. The trends across the Magnificent 7 — Apple, Amazon, Alphabet, Meta, Microsoft, Nvidia, and Tesla impact the entirety of the market directly, making it essential to keep up with them. From constantly switching tabs to keep up to real-time Stock Price updates delivered at a single click, our bloomberg-inspired platform Mag7 is crafted to help investors make faster, smarter, and more confident decisions with market data available at a moments notice on the same interface. No more switching between 7 different tabs, Mag7 has you covered.
 
 Updates automatically using asynchronous API calls for real-time visualization.
 
-📰 Market News Feed
+Market News Feed
 
-Displays real-time news headlines and market sentiment from trusted sources (e.g., Google Finance, NewsAPI).
+Displays real-time news headlines and market sentiment from Alpha Vantage Finance API(API key not included in code for security reasons).
 
-Merges live data with sentiment indicators to highlight trending events per stock.
+Interactive Visualizations
 
-💹 Interactive Visualizations
-
-Built using Chart.js / D3.js, showing stock trends, moving averages, and performance comparisons.
+Built using Chart.js showing stock trends in real-time.
 
 Users can hover, zoom, and explore visual insights interactively.
 
-🧠 Educational Insights
+Educational Insights
 
-Each stock card includes contextual learning—explaining what impacts its price, sector growth, and market drivers.
+Each stock card includes a descriptor outlining the Modus Operandi of the company, its real-time stock price, and a chart showcasing recent trends.
 
 Ideal for beginners looking to understand financial analytics through visualization.
 
-⚙️ Backend Functionality (Planned)
+Backend Functionality (Planned):
 
-Python Flask or Node.js backend to manage API calls securely, cache responses, and handle heavy data traffic.
+Node.js backend to manage API calls securely.
 
-MongoDB or PostgreSQL integration to store historical performance data for trend comparison.
-
-🖼️ Preview
+Preview of featured companies shown below:
 Company
 Apple (AAPL)	
 
@@ -70,35 +67,30 @@ Tesla (TSLA)
 
 ![Tesla Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png)
 
-🧩 Tech Stack
+Tech Stack:
 
-Frontend
+Frontend:
 
-HTML5, CSS3, JavaScript (Vanilla)
+HTML5, CSS3, JavaScript
 
-Chart.js / D3.js (for visualizations)
+Chart.js(for visualizations)
 
-Fetch API / Axios for asynchronous data calls
+API:
 
-Backend
+Alpha Vantage API for real-time stock price information
 
-Flask / Node.js (for API handling & caching)
+Backend:
 
-MongoDB / PostgreSQL (for storing analytics & news)
-
-APIs
-
-Yahoo Finance API
-
-Finnhub.io
-
-NewsAPI.org
+Node.js(for API handling & caching)
 
 💡 Educational Value
 
-Mag7 is more than just a dashboard — it’s an interactive classroom for finance and data analytics.
+Mag7 is more than just a dashboard, its paradise for investors looking to begin their investing journey through stock-research, or successful hedge funds looking to continue theirs.
+
 Users can:
 
-Learn how real-time stock APIs work.
+Visualize data from the magnificient 7 in real-time, at a moments notice at their fingertips as opposed to switching between 7 different tabs.
 
-Understand financial visualizations.
+Understand financial cues to spot market trends, given that the big 7 stock fluctuations influence the entirety of the market.
+
+****Note**** Some of our market data may be inaccurate, we do not assert complete accuracy for all elements however, our stock prices are unequivocally correct. Furthermore, please note our data may not update momentarily with the market, our prices may lag 1-2 minutes behind. Thank you for your patience. After-hours market data is not reflected.
