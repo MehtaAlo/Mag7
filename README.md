@@ -2,6 +2,8 @@
 
 Mag7 is a bloomberg-inspired FinTech analytics platform delivering real-time insights for the “Magnificent Seven” tech stocks — Apple (AAPL), Microsoft (MSFT), Alphabet (GOOGL), Amazon (AMZN), Meta(META), Nvidia (NVDA), and Tesla (TSLA). Integrated Alpha Vantage APIs with client-side JavaScript and Chart.js to render dynamic per-stock live market data visualizations including trading volume, 52-week high & forward PE ratios.
 
+<img width="1511" height="858" alt="image" src="https://github.com/user-attachments/assets/3e9bd046-ebae-4f02-b5b7-ff9aa9b0de94" />
+
 
 Live Demo
 
