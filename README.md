@@ -15,7 +15,7 @@ Features:
 
 Real-Time Stock Data
 
-Mag7 is designed to bring clarity to the chaos of financial markets. Its designed to help users track performance of the 7 most influential stocks listed on NASDAQ, found in almost everyone's portfolio, including high-profile mutual funds to low-risk ETFs to daytraders to beginner-investors, its a service applicable to all. The trends across the Magnificent 7 — Apple, Amazon, Alphabet, Meta, Microsoft, Nvidia, and Tesla impact the entirety of the market directly, making it essential to keep up with them. From constantly switching tabs to keep up to real-time Stock Price updates delivered at a single click, our bloomberg-inspired platform Mag7 is crafted to help investors make faster, smarter, and more confident decisions with market data available at a moments notice on the same interface. No more switching between 7 different tabs, Mag7 has you covered.
+Mag7 is designed to bring clarity to the chaos of financial markets. Its designed to help users track performance of the 7 most influential stocks listed on NASDAQ, found in almost everyone's portfolio, including high-profile mutual funds to low-risk ETFs to daytraders to beginner-investors, its a service applicable to all. The trends across the Magnificent 7 — Apple, Amazon, Alphabet, Meta, Microsoft, Nvidia, and Tesla impact the entirety of the market directly, making it essential to keep up with them. From constantly switching tabs on Yahoo Finance.... all the way to real-time Stock Price updates delivered at a single click, our bloomberg-inspired platform Mag7 is crafted to help investors make faster, smarter, and more confident decisions with market data available at a moments notice on the same interface. No more switching between 7 different tabs, Mag7 has you covered.
 
 Updates automatically using asynchronous API calls for real-time visualization.
 
@@ -91,7 +91,7 @@ Mag7 is more than just a dashboard, its paradise for investors looking to begin 
 
 Users can:
 
-Visualize data from the magnificient 7 in real-time, at a moments notice at their fingertips as opposed to switching between 7 different tabs.
+Visualize data from the magnificient 7 in real-time, at a moments notice at your fingertips as opposed to switching between 7 different tabs.
 
 Understand financial cues to spot market trends, given that the big 7 stock fluctuations influence the entirety of the market.
 
