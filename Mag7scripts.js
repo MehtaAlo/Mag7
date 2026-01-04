@@ -1,6 +1,6 @@
-// JavaScript Document
 
-        // Coverflow functionality
+
+        
         const items = document.querySelectorAll('.coverflow-item');
         const dotsContainer = document.getElementById('dots');
         const currentTitle = document.getElementById('current-title');
@@ -11,13 +11,13 @@
         let currentIndex = 3;
         let isAnimating = false;
 
-        // Mobile menu toggle
+        
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             mainMenu.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on menu items (except external links)
+        
         document.querySelectorAll('.menu-item:not(.external)').forEach(item => {
             item.addEventListener('click', (e) => {
                 menuToggle.classList.remove('active');
@@ -25,7 +25,7 @@
             });
         });
 
-        // Close mobile menu when clicking outside
+        
         document.addEventListener('click', (e) => {
             if (!menuToggle.contains(e.target) && !mainMenu.contains(e.target)) {
                 menuToggle.classList.remove('active');
@@ -33,7 +33,7 @@
             }
         });
 
-        // Image data with titles and descriptions
+        
         const imageData = [
             {
                 title: "Nvidia (NASDAQ: NVDA)",
@@ -65,7 +65,7 @@
             }
         ];
 
-        // Create dots
+        
         items.forEach((_, index) => {
             const dot = document.createElement('div');
             dot.className = 'dot';
@@ -77,7 +77,7 @@
         let autoplayInterval = null;
         let isPlaying = true;
         const playIcon = document.querySelector('.play-icon');
-        // Redirect to Nvidia page
+        
         const pageMap = {
             0: "Nvidia.html",
             1: "google.html",
@@ -177,18 +177,18 @@
             updateCoverflow();
         }
 
-        // Keyboard navigation
+        
         container.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowLeft') navigate(-1);
             if (e.key === 'ArrowRight') navigate(1);
         });
 
-        // Click on items to select
+        
         items.forEach((item, index) => {
             item.addEventListener('click', () => goToIndex(index));
         });
 
-        // Touch/swipe support
+        
         let touchStartX = 0;
         let touchEndX = 0;
         let touchStartY = 0;
@@ -237,7 +237,7 @@
             }
         }
 
-        // Initialize images and reflections
+        
         items.forEach((item, index) => {
             const img = item.querySelector('img');
             const reflection = item.querySelector('.reflection');
@@ -256,7 +256,7 @@
             };
         });
 
-        // Autoplay functionality
+        
         function startAutoplay() {
             autoplayInterval = setInterval(() => {
                 currentIndex = (currentIndex + 1) % items.length;
@@ -289,7 +289,7 @@
             stopAutoplay();
         }
 
-        // Add event listeners to stop autoplay on manual navigation
+        
         items.forEach((item) => {
             item.addEventListener('click', handleUserInteraction);
         });
@@ -307,13 +307,13 @@
             }
         });
 
-        // Smooth scrolling and active menu item
+        
         const sections = document.querySelectorAll('.section');
         const menuItems = document.querySelectorAll('.menu-item');
         const header = document.getElementById('header');
         const scrollToTopBtn = document.getElementById('scrollToTop');
 
-        // Update active menu item on scroll
+        
         function updateActiveMenuItem() {
             const scrollPosition = window.scrollY + 100;
 
@@ -333,14 +333,14 @@
                 }
             });
 
-            // Header background on scroll
+            
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
 
-            // Show/hide scroll to top button
+            
             if (window.scrollY > 500) {
                 scrollToTopBtn.classList.add('visible');
             } else {
@@ -350,12 +350,12 @@
 
         window.addEventListener('scroll', updateActiveMenuItem);
 
-        // Smooth scroll to section
+        
         menuItems.forEach(item => {
             item.addEventListener('click', (e) => {
                 const targetId = item.getAttribute('href');
                 
-                // Check if it's an internal link (starts with #)
+                
                 if (targetId && targetId.startsWith('#')) {
                     e.preventDefault();
                     const targetSection = document.querySelector(targetId);
@@ -364,29 +364,29 @@
                         targetSection.scrollIntoView({ behavior: 'smooth' });
                     }
                 }
-                // External links will open normally in new tab
+                
             });
         });
 
-        // Logo click to scroll to top
+
         document.querySelector('.logo-container').addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Scroll to top button
+
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Form submission
+
         function handleSubmit(event) {
             event.preventDefault();
             alert('Thank you for your message! We\'ll get back to you soon.');
             event.target.reset();
         }
 
-        // Initialize
+
         updateCoverflow();
         container.focus();
         startAutoplay();
