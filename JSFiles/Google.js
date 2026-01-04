@@ -1,15 +1,14 @@
-// --- CONFIGURATION ---
 const API_KEY = "";
 const SYMBOL = "GOOGL";
 
-// Mocked fundamentals (stable per refresh)
+
 const mockFundamentals = {
-    peRatio: (60 + Math.random() * 10).toFixed(1), // 60–70
-    marketCap: Math.floor(3000000000000 + Math.random() * 300000000000), // $3.0T–$3.3T
-    fiftyTwoWeekHighMultiplier: 1.15 + Math.random() * 0.1 // 1.15–1.25
+    peRatio: (60 + Math.random() * 10).toFixed(1), 
+    marketCap: Math.floor(3000000000000 + Math.random() * 300000000000), 
+    fiftyTwoWeekHighMultiplier: 1.15 + Math.random() * 0.1 
 };
 
-// Formatter for large numbers
+
 function formatLargeNumber(num) {
     if (num >= 1_000_000_000) return (num / 1_000_000_000).toFixed(2) + "B";
     if (num >= 1_000_000) return (num / 1_000_000).toFixed(2) + "M";
@@ -18,7 +17,7 @@ function formatLargeNumber(num) {
 
 let chart = null;
 
-// --- CHART UPDATE FROM LIVE PRICE ---
+
 function updateChartFromPrice(price) {
     if (!chart) return;
 
@@ -30,7 +29,7 @@ function updateChartFromPrice(price) {
     chart.data.labels.push(label);
     chart.data.datasets[0].data.push(price);
 
-    // Keep last 60 points
+    
     if (chart.data.labels.length > 60) {
         chart.data.labels.shift();
         chart.data.datasets[0].data.shift();
@@ -39,7 +38,7 @@ function updateChartFromPrice(price) {
     chart.update("none");
 }
 
-// --- CREATE CHART ONCE ---
+
 function createChart() {
     const ctx = document.getElementById("googlChart").getContext("2d");
 
@@ -83,7 +82,7 @@ function createChart() {
     });
 }
 
-// --- FETCH REAL-TIME QUOTE ---
+
 async function getGOOGLQuote() {
     const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${SYMBOL}&apikey=${API_KEY}`;
 
@@ -106,7 +105,7 @@ async function getGOOGLQuote() {
         const change = parseFloat(quote["09. change"]);
         const changePercent = parseFloat(quote["10. change percent"].replace("%", ""));
 
-        // --- UI Updates ---
+        
         document.getElementById("price").textContent = "$" + price.toFixed(2);
 
         const changeEl = document.getElementById("change");
@@ -127,7 +126,7 @@ async function getGOOGLQuote() {
         document.getElementById("fiftyTwoWeekHigh").textContent =
             "$" + (price * mockFundamentals.fiftyTwoWeekHighMultiplier).toFixed(2);
 
-        // --- CHART UPDATE ---
+        
         updateChartFromPrice(price);
 
     } catch (err) {
@@ -136,7 +135,7 @@ async function getGOOGLQuote() {
     }
 }
 
-// --- INIT ---
+
 createChart();
 getGOOGLQuote();
 setInterval(getGOOGLQuote, 30000);

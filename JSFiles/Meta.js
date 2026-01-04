@@ -1,16 +1,14 @@
-// --- CONFIGURATION ---
-// !!! IMPORTANT: Get your free key from Alpha Vantage and paste it here
 const API_KEY = "";
 const SYMBOL = "META";
 
-// --- Mock static-but-random fundamentals (generated once per page load) ---
+
 const mockFundamentals = {
-    peRatio: (25 + Math.random() * 10).toFixed(1),                 // Meta-like placeholder
-    marketCap: Math.floor(900000000000 + Math.random() * 100000000000), // ~$900B–$1T
+    peRatio: (25 + Math.random() * 10).toFixed(1),                 
+    marketCap: Math.floor(900000000000 + Math.random() * 100000000000),
     fiftyTwoWeekHighMultiplier: 1.10 + Math.random() * 0.1
 };
 
-// A simple formatter for large numbers (e.g., 123456789 becomes 123.5M)
+
 function formatLargeNumber(num) {
     if (num >= 1000000000) {
         return (num / 1000000000).toFixed(2) + 'B';
@@ -23,7 +21,7 @@ function formatLargeNumber(num) {
 
 let chart = null;
 
-// 1. Fetches real-time price and key daily stats (Alpha Vantage Quote)
+
 async function getMETAQuote() {
     const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${SYMBOL}&apikey=${API_KEY}`;
 
@@ -76,7 +74,7 @@ async function getMETAQuote() {
 }
 
 
-// 2. Fetches historical data for the chart
+
 async function getMETAHistory() {
     const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${SYMBOL}&interval=5min&outputsize=full&apikey=${API_KEY}`;
 
@@ -124,7 +122,7 @@ async function getMETAHistory() {
 }
 
 
-// 3. Initializes the Chart.js chart
+
 function createChart(labels, data) {
     let ctx = document.getElementById("metaChart").getContext("2d");
 
@@ -165,7 +163,7 @@ function createChart(labels, data) {
 }
 
 
-// --- INITIALIZATION ---
+
 getMETAQuote();
 setInterval(getMETAQuote, 30000);
 getMETAHistory();
