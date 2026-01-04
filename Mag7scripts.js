@@ -1,6 +1,3 @@
-
-
-        
         const items = document.querySelectorAll('.coverflow-item');
         const dotsContainer = document.getElementById('dots');
         const currentTitle = document.getElementById('current-title');
